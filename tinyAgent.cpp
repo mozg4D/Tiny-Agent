@@ -272,6 +272,8 @@ const char* g_index_html = R"HTML(<!DOCTYPE html>
             overflow: auto;
             tab-size: 4;
             box-sizing: border-box;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
         pre#code-output {
@@ -587,7 +589,7 @@ const char* g_index_html = R"HTML(<!DOCTYPE html>
             els.executeBtn.onclick = runExecution;
 
             // Default code
-            els.editorIn.value = `// Commands will appear here...`;
+            // els.editorIn.value = `// Commands will appear here...`;
             updateEditor(true);
             resizeCanvas();
 
